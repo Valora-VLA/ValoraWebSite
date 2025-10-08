@@ -9,4 +9,4 @@ ex:
 Caso faça um PR certifique-se de explicar corretamente o que alterou seguindo o guia de contribuição para receber
 o possível merge. 
 
-Bem vindos/as !
+Bem vindos/as ! 
