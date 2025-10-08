@@ -1,0 +1,12 @@
+Olá, Todo conteúdo alterado coloque na pasta log >> daily.txt 
+ex: Vyzer, alterei o Hero em src, 08/10/2025.
+
+Ao fazer o commit sempre informe detalhadamente o que alterou para manter as boas práticas
+ex: 
+    Resolvi o Bug no WebSite
+    Resolvi o bug na qual fazia os botões não funcionarem - src/components/hero.tsx
+
+Caso faça um PR certifique-se de explicar corretamente o que alterou seguindo o guia de contribuição para receber
+o possível merge. 
+
+Bem vindos/as !
