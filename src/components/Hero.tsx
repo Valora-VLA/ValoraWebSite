@@ -42,7 +42,7 @@ const HeroWithCarousel = () => {
       <div className="container mx-auto px-6 pt-32 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="flex justify-center order-2 md:order-1">
           <img
-            src="/Moby-logo.png"
+            src="/AWSlogo.png"
             alt="Mascote"
             className="w-[280px] h-auto md:w-[320px] drop-shadow-xl"
           />
