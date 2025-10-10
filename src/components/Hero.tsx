@@ -1,26 +1,29 @@
-import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
 const carouselItems = [
   {
     title: "Webinar: Otimização de Cotações",
-    description: "Aprenda estratégias avançadas para gerenciar cotações com nossa equipe de especialistas.",
-    cta: "Inscreva-se agora",
+    description:
+      "Aprenda estratégias avançadas para gerenciar cotações com nossa equipe de especialistas.",
+    image: "/kt.png",
   },
   {
     title: "Lançamento Valora v2.0",
-    description: "Descubra as novas funcionalidades da nossa plataforma na próxima atualização!",
-    cta: "Saiba mais",
+    description:
+      "Descubra as novas funcionalidades da nossa plataforma na próxima atualização!",
+    image: "/AWSlogo.png",
   },
   {
     title: "Workshop de Automação",
-    description: "Participe do nosso workshop prático sobre automação de processos empresariais.",
-    cta: "Reservar vaga",
+    description:
+      "Participe do nosso workshop prático sobre automação de processos empresariais.",
+    image: "/Moby-logo.png",
   },
   {
     title: "Beta Testing Exclusivo",
-    description: "Seja um dos primeiros a testar as funcionalidades premium do Valora!",
-    cta: "Participar do Beta",
+    description:
+      "Seja um dos primeiros a testar as funcionalidades premium do Valora!",
+    image: "/jnks.png",
   },
 ];
 
@@ -37,36 +40,36 @@ const HeroWithCarousel = () => {
   }, []);
 
   return (
-    <section className="relative bg-background">
+    <section className="relative bg-white text-black transition-colors duration-300">
       {/* Hero Section */}
       <div className="container mx-auto px-6 pt-32 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="flex justify-center order-2 md:order-1">
           <img
-            src="/AWSlogo.png"
+            src="/valoracervo.png"
             alt="Mascote"
             className="w-[280px] h-auto md:w-[320px] drop-shadow-xl"
           />
         </div>
         <div className="order-1 md:order-2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Controle suas <span className="text-primary">cotações</span> como nunca antes
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+            Controle suas cotações como nunca antes
           </h1>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-gray-700 mb-8">
             Plataforma inteligente para automação, análise e gestão de cotações empresariais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 group">
+            <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">
               Começar agora
-            </Button>
-            <Button size="lg" variant="outline">
+            </button>
+            <button className="bg-transparent text-black border border-black px-8 py-3 rounded-lg hover:bg-black hover:text-white transition">
               Agendar demo
-            </Button>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Gradient Carousel Section */}
-      <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 min-h-[500px] flex items-center justify-center px-6">
+      {/* Gradient Carousel Section (mantido igual) */}
+      <div className="bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 min-h-[500px] flex items-center justify-center px-6">
         <div className="container mx-auto relative max-w-4xl">
           {/* Carousel */}
           <div className="overflow-hidden">
@@ -83,9 +86,14 @@ const HeroWithCarousel = () => {
                     <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
                     <p className="text-base">{item.description}</p>
                   </div>
-                  <Button className="bg-white text-black hover:bg-gray-200 font-semibold px-8 py-3 rounded-full">
-                    {item.cta}
-                  </Button>
+
+                  <div className="w-[180px] h-[180px] flex-shrink-0">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-contain drop-shadow-lg"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
