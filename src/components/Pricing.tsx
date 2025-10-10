@@ -58,37 +58,37 @@ const carouselItems = [
     title: "Atendimento Humanizado",
     description:
       "Conte com um time sempre disponível para ajudar sua empresa a aproveitar ao máximo a Valora.",
-    image: "/nike.png",
+    image: "/assets/nike.png",
   },
   {
     title: "Atendimento Humanizado",
     description:
       "Conte com um time sempre disponível para ajudar sua empresa a aproveitar ao máximo a Valora.",
-    image: "/amazon.png",
+    image: "/assets/amazon.png",
   },
   {
     title: "Automação Inteligente",
     description:
       "Acelere suas cotações e reduza erros com nossos recursos de automação e integração.",
-    image: "/jnks.png",
+    image: "/assets/jnks.png",
   },
   {
     title: "Resultados que Falam",
     description:
       "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
-    image: "/Moby-logo.png",
+    image: "/assets/Moby-logo.png",
   },
   {
     title: "Resultados que Falam",
     description:
       "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
-    image: "/k8s.png",
+    image: "/assets/k8s.png",
   },
     {
     title: "Resultados que Falam",
     description:
       "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
-    image: "/mercado.png",
+    image: "/assets/mercado.png",
   },
 ];
 

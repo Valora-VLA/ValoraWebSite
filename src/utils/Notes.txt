@@ -1,0 +1,1 @@
+Para funções utilitárias ou helpers que nao se encaixam em lib.

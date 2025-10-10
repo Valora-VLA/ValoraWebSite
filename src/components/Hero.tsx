@@ -11,19 +11,19 @@ const carouselItems = [
     title: "Lançamento Valora v2.0",
     description:
       "Descubra as novas funcionalidades da nossa plataforma na próxima atualização!",
-    image: "/AWSlogo.png",
+    image: "/assets/AWSlogo.png",
   },
   {
     title: "Workshop de Automação",
     description:
       "Participe do nosso workshop prático sobre automação de processos empresariais.",
-    image: "/Moby-logo.png",
+    image: "/assets/Moby-logo.png",
   },
   {
     title: "Beta Testing Exclusivo",
     description:
       "Seja um dos primeiros a testar as funcionalidades premium do Valora!",
-    image: "/jnks.png",
+    image: "/assets/jnks.png",
   },
 ];
 
