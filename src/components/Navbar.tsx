@@ -28,9 +28,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-8 rounded-lg flex items-center justify-center">
               <span>
-                <img src="/valoracervo.png" alt="Logo" />
+                <img src="/ValoraLove.png" alt="Logo" />
               </span>
             </div>
             <span className="text-xl font-bold text-black">Valora</span>
@@ -89,9 +89,6 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <a href="#blog" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
-              Blog
-            </a>
             <a href="#docs" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
               Documentação
             </a>

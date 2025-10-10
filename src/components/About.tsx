@@ -8,7 +8,7 @@ const About: React.FC = () => {
           {/* Imagem */}
           <div>
             <img
-              src="/Moby-logo.png"
+              src="/ValoraLove.png"
               alt="Equipe Valora"
               className=""
             />

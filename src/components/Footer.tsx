@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 py-12 px-6 text-white">
+    <footer id="contact" className="bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 py-12 px-6 text-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                <img src="/Moby-logo.png" alt="Valora Logo" className="w-full h-full object-contain" />
+                <img src="/ValoraGarçom.png" alt="Valora Logo" className="w-full h-full object-contain" />
               </div>
               <span className="text-xl font-bold">Valora</span>
             </div>

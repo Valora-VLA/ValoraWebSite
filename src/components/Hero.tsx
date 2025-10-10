@@ -5,7 +5,7 @@ const carouselItems = [
     title: "Webinar: Otimização de Cotações",
     description:
       "Aprenda estratégias avançadas para gerenciar cotações com nossa equipe de especialistas.",
-    image: "/kt.png",
+    image: "/ValoraLove.png",
   },
   {
     title: "Lançamento Valora v2.0",
@@ -45,7 +45,7 @@ const HeroWithCarousel = () => {
       <div className="container mx-auto px-6 pt-32 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         <div className="flex justify-center order-2 md:order-1">
           <img
-            src="/valoracervo.png"
+            src="/ValoraGarçom.png"
             alt="Mascote"
             className="w-[280px] h-auto md:w-[320px] drop-shadow-xl"
           />

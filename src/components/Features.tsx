@@ -54,9 +54,9 @@ const Features: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 mb-16">
           <div className="">
             <img
-              src="/jnks.png"
+              src="/ValoraK8s.png"
               alt="Equipe trabalhando com Valora"
-              className=""
+              className="w-[280px] h-auto md:w-[520px] drop-shadow-xl"
             />
           </div>
           <div className="text-left">
