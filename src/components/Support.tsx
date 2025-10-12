@@ -32,7 +32,7 @@ const Support: React.FC = () => {
           {/* Imagem */}
           <div className="order-1 lg:order-2">
             <img
-              src="/ValoraSupport.png"
+              src="/ValoraSupportPage.png"
               alt="Equipe de Suporte Valora"
               className=""
             />

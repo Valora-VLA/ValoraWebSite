@@ -5,7 +5,7 @@ const carouselItems = [
     title: "Webinar: Otimização de Cotações",
     description:
       "Aprenda estratégias avançadas para gerenciar cotações com nossa equipe de especialistas.",
-    image: "/ValoraLove.png",
+    image: "/assets/nike.png",
   },
   {
     title: "Lançamento Valora v2.0",
@@ -35,7 +35,7 @@ const HeroWithCarousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
   }, []);
 

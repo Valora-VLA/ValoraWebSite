@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
+    id: "basic-plan",
     name: "Starter",
     price: "R$ 197",
     period: "/mês",
@@ -18,6 +19,7 @@ const plans = [
     popular: false,
   },
   {
+    id: "pro-plan",
     name: "Professional",
     price: "R$ 497",
     period: "/mês",
@@ -34,6 +36,7 @@ const plans = [
     popular: true,
   },
   {
+    id: "enterprise-plan",
     name: "Enterprise",
     price: "Personalizado",
     period: "",
@@ -54,16 +57,16 @@ const plans = [
 
 // Itens do carrossel de gradiente
 const carouselItems = [
-    {
+  {
     title: "Atendimento Humanizado",
     description:
       "Conte com um time sempre disponível para ajudar sua empresa a aproveitar ao máximo a Valora.",
     image: "/assets/nike.png",
   },
   {
-    title: "Atendimento Humanizado",
+    title: "Integrações Poderosas",
     description:
-      "Conte com um time sempre disponível para ajudar sua empresa a aproveitar ao máximo a Valora.",
+      "Conecte a Valora com as ferramentas que você já usa e mantenha tudo em sincronia.",
     image: "/assets/amazon.png",
   },
   {
@@ -76,18 +79,18 @@ const carouselItems = [
     title: "Resultados que Falam",
     description:
       "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
-    image: "/assets/Moby-logo.png",
+    image: "/assets/ifood.png",
   },
   {
-    title: "Resultados que Falam",
+    title: "Tecnologia de Ponta",
     description:
-      "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
+      "Segurança, desempenho e escalabilidade garantidos em toda a plataforma.",
     image: "/assets/k8s.png",
   },
-    {
-    title: "Resultados que Falam",
+  {
+    title: "Parceiros de Confiança",
     description:
-      "Empresas que usam a Valora economizam até 60% de tempo em seus processos de compra.",
+      "As maiores empresas do setor confiam na Valora para otimizar seus processos.",
     image: "/assets/mercado.png",
   },
 ];
@@ -108,29 +111,31 @@ const Pricing = () => {
   return (
     <>
       {/* Seção de Planos */}
-      <section id="pricing" className="py-20 px-6 bg-background">
+      <section id="pricing" className="py-20 px-6 bg-background scroll-mt-20">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Planos que cabem no seu bolso
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Escolha o plano ideal para sua empresa. Sem surpresas, sem taxas escondidas.
+              Escolha o plano ideal para sua empresa. Sem surpresas, sem taxas
+              escondidas.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {plans.map((plan, index) => (
               <div
+                id={plan.id}
                 key={index}
                 className={`relative gradient-border p-8 rounded-2xl hover:scale-105 transition-all duration-300 animate-fade-up ${
-                  plan.popular ? "md:-mt-4 md:mb-4" : ""
+                  plan.popular ? "md:-mt-4 md:mb-4 border-primary" : ""
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium shadow-md">
                       Mais Popular
                     </span>
                   </div>

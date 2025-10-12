@@ -151,4 +151,21 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+@layer utilities {
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-infinite-scroll {
+    display: flex;
+    width: calc(200%);
+    animation: infinite-scroll 40s linear infinite;
+  }
+}
 }

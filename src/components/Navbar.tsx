@@ -38,7 +38,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
+            <a href="/" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
               Home
             </a>
             <a href="#features" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
@@ -89,13 +89,13 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <a href="#docs" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
+            <a href="/docs" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
               Documentação
             </a>
-            <a href="#community" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
+            <a href="/community" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
               Comunidade
             </a>
-            <a href="#careers" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
+            <a href="/careers" className="text-sm font-medium text-black/70 hover:text-black transition-colors">
               Carreiras
             </a>
           </div>
